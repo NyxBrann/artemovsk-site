@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обратная связь — Артёмовск</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <h1>🏙️ Артёмовск</h1>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О разработчике</a></li>
+            <li><a href="history.html">История</a></li>
+            <li><a href="infrastructure.html">Инфраструктура</a></li>
+            <li><a href="culture.html">Культура</a></li>
+            <li><a href="contact.html" class="current">Обратная связь</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Форма обратной связи</h2>
+        <p>
+            Если у вас есть вопросы, предложения или замечания по работе сайта,
+            заполните форму ниже. Все поля обязательны для заполнения.
+        </p>
+
+        <form class="contact-form" action="#" method="post" novalidate>
+            <label for="name">Ваше имя</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Иван Иванов"
+                required
+                minlength="2"
+                maxlength="50"
+                pattern="[А-Яа-яЁёA-Za-z\s\-]{2,50}"
+                title="Введите имя (только буквы, пробелы и дефис, от 2 до 50 символов)">
+
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@mail.com"
+                required
+                title="Введите корректный адрес электронной почты">
+
+            <label for="message">Сообщение</label>
+            <textarea
+                id="message"
+                name="message"
+                placeholder="Ваше сообщение..."
+                required
+                minlength="10"
+                maxlength="1000"
+                title="Введите сообщение (от 10 до 1000 символов)"></textarea>
+
+            <button type="submit">Отправить сообщение</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Контактная информация</h2>
+        <ul>
+            <li><strong>Адрес:</strong> г. Артёмовск, ул. Центральная, 1</li>
+            <li><strong>Телефон:</strong> +7 (123) 456-78-90</li>
+            <li><strong>Email:</strong> info@artemovsk.example</li>
+        </ul>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2026 История городов Республики. Артёмовск.</p>
+</footer>
+
+<a href="#" class="to-top" title="Наверх">↑</a>
+
+</body>
+</html>
